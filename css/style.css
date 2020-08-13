@@ -1,0 +1,377 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+
+    
+
+
+}
+.navbar{
+    overflow: hidden;
+
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  transition: .5s;
+}
+.navbar .logo img{
+    width: 100px;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+}
+.navbar .logo h2{
+    display: inline-block;
+    margin: 0;
+    font-size: 33px;
+    color: #fff;
+
+
+}
+.navbar .list ul li{
+    display: inline-block;
+    padding: 15px 0;
+
+
+  
+}
+.navbar .list{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 10px;
+    
+}
+.navbar .list ul li a{
+    position: relative;
+
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+   
+   
+}
+.navbar .list li a:hover{
+   
+    border-top: 1px solid #0078fe ;
+    border-bottom: 1px solid #0078fe ;
+    background-color:#0078fe ;
+transform: scaleY(2);
+}
+.navbar .list ul li:last-of-type{
+    border-radius: 50px;
+    background-color: #0078fe;
+    color: #fff;
+    padding: 10px 27px;
+    transition: .4s;
+    border: 2px solid transparent;
+text-transform: capitalize;
+    
+}
+
+.navbar .list ul li:last-of-type:hover{
+    background: none;
+    border: 2px solid #0078fe;
+    color: #000;
+}
+
+/* end nav */
+/* start header */
+.header1{
+    overflow: hidden;
+
+background-image: url(../img/images/header.jpg); 
+   height: 700px;
+    background-size: cover;
+    position: relative;
+
+}
+
+.aboutt .overlay{z-index: 0;}
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+}
+.info h2{
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0;
+} 
+.info p{
+    font-size: 20px;
+    font-weight: 70px;
+    text-transform: uppercase;
+}.info h2 span{
+    color: #007;
+}
+.info .play-btn{
+    width:95px;
+    height: 95px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(#0078fe 50%, rgba(5,5,5,.8) 52%);
+    overflow: hidden;
+    border: transparent;
+}
+.info .play-btn::before{
+    position: absolute;
+    content: '';
+    width:120px;
+    height: 120px;
+    top:-16%;
+    left: -14%;
+    border: 2px solid #666;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    overflow: hidden;
+    opacity: .7;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(.6,.6);
+    }
+    100%{
+        transform: scale(1,1);
+
+    }
+}
+.info .play-btn::after{
+    position: absolute;
+    content: '';
+   
+    top:50%;
+    left: 50%;
+   transform: translate(-40%,-50%);
+   border-left:10px solid #fff;
+   border-top:10px solid transparent;
+   border-bottom:10px solid transparent;
+
+
+
+}
+
+.info .about-btn{
+    color: #000;
+    border:2px solid #0078fe;
+    padding: 10px 30px;
+    border-radius: 50px;
+    padding-top: 20px;
+    margin-top: 20px;
+    line-height: 1.3;
+    padding-bottom: 21px;
+    position: relative;
+
+}
+
+.info .about-btn:hover{
+    background-color: #0078fe;
+    color: #fff;
+
+}
+.header1 .overlay ,.aboutt .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    z-index: 1;
+    
+}
+
+/* start section about */
+.inform{
+    padding-top: 30px;
+    background: url(../img/images/about.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 200px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.inform .about1 h2 p{color: #fff;
+z-index: 222222222;}
+
+
+/* start cilient */
+.heading  
+{text-align: center;
+margin-top: 80px;}
+.heading h2{
+    font-size: 37px;
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #0e1b4d;
+}
+.heading p{
+    color: #999;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 500;
+}
+.heading span{
+    width: 50px;
+    height: 5px;
+    background-color: #0078fe;
+    display: block;
+    margin: 0 auto;
+}
+.clients .box {
+    position: relative;
+    overflow: hidden;
+    padding: 0 15px;
+    margin-top: 20px;
+
+}
+.clients .box >img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.info1{
+    overflow: hidden;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 92%;
+    margin: 0 15px;
+    padding-bottom: 30px;
+    transform: translateY(53px);
+    transition: .4s;
+
+}
+.info1:hover{
+    transform: translateY(17px);
+    cursor: pointer;
+}
+
+
+
+/* START TESTMONIALS */
+.testmonials{background-color: #f6f7fd;
+    padding: 40px 0;
+    margin-top: 70px;
+
+}
+.testmonials{
+   
+    
+    padding: 40px 0;
+ margin: 0 auto;
+   
+  
+}
+.testmonials .buttons{
+
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.testmonials .buttons .btn{
+    color: #fff;
+    background-color: #0e184d;
+    padding: 12px 60px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+   
+    
+    
+}.testmonials .buttons .btn.active{
+    background-color: #0078fe;
+
+}
+
+
+
+.media-object {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.testmonials .boxing h3{
+    margin-bottom: 30px;
+}
+.testmonials .boxing .time {
+    padding: 40px;
+}
+.testmonials .boxing .media .media-body h4{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+}
+.testmonials .boxing .media .media-body p{
+    padding-left: 30px;
+    font-size: 14px;
+
+}
+.testmonials .boxing {
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgb(97, 95, 95,.2);
+}
+
+
+
+/* start products */
+.col-lg-6{padding: 0;
+margin: 0;}
+
+.product .map iframe{
+    width: 100%;
+    height: 100%;
+}
+.image2{width: 100%; padding: 0;margin: 0;}
+.product   img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+.product .map,.product .inffo{margin:20px 0 ;padding: 0; }
+.product .map iframe {
+    width: 100%;
+    height: 460px;
+}
+
+
+
+
+.product .box > img{
+    width: 100%;
+    height: 100%;
+}
